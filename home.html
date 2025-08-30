@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heera Enterprises - Income And Expense Record</title>
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center;
+            color: #e0ddddff;
+            font-size: 5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            border-bottom: 5px solid #e5e6e7ff;
+            padding-bottom: 15px;
+            font-weight: 700;
+            font-display: block;
+        }
+
+        h2 {
+            text-align: center;
+            color: #302e2eff;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        h3 {
+            text-align: center;
+            color: #dddadaff;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* Navigation styling */
+        .containtext {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .containtext ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .containtext li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .containtext a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .containtext a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(45deg, #764ba2, #667eea);
+        }
+
+        /* Pictures section */
+        .pictures {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .pictures img {
+            max-width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px black;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .pictures img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .contain {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            .containtext a {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            .pictures img {
+                max-width: 250px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+                letter-spacing: 1px;
+            }
+            
+            .pictures img {
+                max-width: 200px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h1>HEERA ENTERPRISES</h1>
+        <h2>Income And Expense Record</h2>
+        
+        <div class="containtext">
+            <ul>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </div>
+        
+        <div class="pictures">
+            <h3>Related Images</h3>
+            <img src="image/image1.jpg" alt="Related Image 1">
+            <img src="image/image2.jpg" alt="Related Image 2">
+        </div>
+    </div>
+</body>
+</html>
